@@ -24,7 +24,7 @@ function displayProduct(products) {
     <p class="stock">${stock} items left</p>
     </div>
     `;
-
     innerProduct.appendChild(productDiv);
   });
 }
+

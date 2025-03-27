@@ -144,9 +144,105 @@ footer h2 {
   margin: 5px 0;
 }
 
+.contact-hero {
+  background-image: url("https://images.unsplash.com/photo-1693852663238-126c16478023?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNvbnRhY3QlMjB1cyUyMGltYWdlfGVufDB8fDB8fHww");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 600px;
+  position: relative;
+}
 
+.contact-hero h1 {
+  color: white;
+  font-size: 60px;
+  font-weight: 700;
+  font-family: cursive;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/Isaac025/Ecommerce.git
-git push -u origin main
+form {
+  margin: 25px auto;
+  max-width: 500px;
+  width: 100%;
+  padding: 10px;
+  /* background-color: aliceblue; */
+  /* height: 450px; */
+  border-radius: 7px;
+  box-shadow: 2px 2px 2px grey;
+}
+
+form .username {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  /* width: 100%; */
+}
+
+.username > div {
+  width: 50%;
+}
+
+.username input {
+  width: 100%;
+}
+
+.form-control input,
+.form-control textarea {
+  width: 100%;
+  display: block;
+  padding: 10px;
+  margin: 15px 0;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.form-control textarea {
+  height: 150px;
+  outline: none;
+}
+
+.form-control button {
+  width: 100%;
+  background-color: black;
+  color: white;
+  font-size: 32px;
+  border-radius: 10px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.form-control.success input {
+  border-color: #2ecc71;
+}
+
+.form-control.success textarea {
+  border-color: #2ecc71;
+}
+
+.form-control.error input {
+  border-color: #e74c3c;
+}
+
+.form-control.error textarea {
+  border-color: #e74c3c;
+}
+
+.form-control input:focus {
+  outline: 0;
+  border-color: #777;
+}
+
+.form-control small {
+  color: #e74c3c;
+  visibility: hidden;
+}
+
+.form-control.error small {
+  visibility: visible;
+}
