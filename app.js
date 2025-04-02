@@ -27,4 +27,3 @@ function displayProduct(products) {
     innerProduct.appendChild(productDiv);
   });
 }
-
